@@ -98,7 +98,7 @@ Importe o arquivo `Insomnia.json` no Insomnia ou clique no botão [Run in Insomn
 - Crie um banco de dados no `postgres` com o nome de `gobarber-postgres`;
 - Rode `cp .env.example .env` e preencha o arquivo `.env` com **SUAS** variáveis ambiente;
 - Rode `yarn sequelize db:migrate` para executar as migrations;
-- Rode `yarn dev` para iniciar o servidor. -->
+- Rode `yarn dev` para iniciar o servidor; -->
 
 <!-- ```bash
 # A partir da raiz do projeto, entre na pasta do backend
