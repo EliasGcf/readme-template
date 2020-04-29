@@ -88,7 +88,11 @@ Importe o arquivo `Insomnia.json` no Insomnia ou clique no botão [Run in Insomn
 - [PostgreSQL](https://www.postgresql.org/)
 - [MongoDB](https://www.mongodb.com/) -->
 
-**Faça um clone desse repositório**
+**Faça um clone desse repositório e acesse o diretório**
+
+```bash
+git clone https://github.com/EliasGcf/NOME_DO_REPO.git
+```
 
 ### Backend
 
