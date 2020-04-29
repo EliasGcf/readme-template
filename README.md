@@ -91,7 +91,7 @@ Importe o arquivo `Insomnia.json` no Insomnia ou clique no botão [Run in Insomn
 **Faça um clone desse repositório e acesse o diretório**
 
 ```bash
-git clone https://github.com/EliasGcf/NOME_DO_REPO.git
+$ git clone https://github.com/EliasGcf/NOME_DO_REPO.git
 ```
 
 ### Backend
