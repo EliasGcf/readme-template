@@ -53,6 +53,7 @@ Esta aplicação foi desenolvida com as seguintes tecnologias:
 
 <!-- - [Node.js](https://nodejs.org/en/)
 - [ReactJS](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.io/)
 - [Express](https://expressjs.com/pt-br/)
