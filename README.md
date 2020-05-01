@@ -57,6 +57,7 @@ Esta aplicação foi desenolvida com as seguintes tecnologias:
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.io/)
 - [Express](https://expressjs.com/pt-br/)
+- [TypeORM](https://typeorm.io/#/)
 - [Celebrate](https://github.com/arb/celebrate)
 - [Sequelize](https://sequelize.org/)
 - [PostgreSQL](https://www.postgresql.org/)
