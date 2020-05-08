@@ -1,16 +1,18 @@
 <h1 align="center">
 	<!-- <img alt="Logo" src=".github/logo.png" width="200px" /> -->
-  Logo da Aplicação
+  Application Logo
 </h1>
 
 <h3 align="center">
-  Titulo ou um breve slogan.
+  Title or one short slogan.
 </h3>
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EliasGcf/readme-template">
-  
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/EliasGcf/readme-template">
+
+  <a href="https://www.linkedin.com/in/eliasgcf/">
+    <img alt="Made by" src="https://img.shields.io/badge/made%20by-elias%20gabriel-gree">
+  </a>
   
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/EliasGcf/readme-template">
   
@@ -26,11 +28,11 @@
 </p>
 
 <p align="center">
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-instalação-execução-e-desenvolvimento">Instalação, execução e desenvolvimento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licença">Licença</a>
+  <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">License</a>
 </p>
 
 <p id="insomniaButton" align="center">
@@ -41,13 +43,13 @@
 
 <img alt="Layout" src="https://res.cloudinary.com/eliasgcf/image/upload/v1586302738/assets/previewApp_fnt7hm.png">
 
-## 👨🏻‍💻 Projeto
+## 👨🏻‍💻 About the project
 
-- <p style="color: red;">Breve explicação do Projeto</p>
+- <p style="color: red;">Brief explanation about the project</p>
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
-Esta aplicação foi desenolvida com as seguintes tecnologias:
+Technologies that i used to develop this api
 
 - [Node.js](https://nodejs.org/en/)
 - [ReactJS](https://reactjs.org/)
@@ -74,108 +76,119 @@ Esta aplicação foi desenolvida com as seguintes tecnologias:
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/)
 
-## 💻 Instalação, execução e desenvolvimento
+## 💻 Getting started
 
-Importe o arquivo `Insomnia.json` no Insomnia ou clique no botão [Run in Insomnia](#insomniaButton)
+Import the `Insomnia.json` on Insomnia App or click on [Run in Insomnia](#insomniaButton) button
 
-### Pré-requisitos
+### Requirements
 
 - [Node.js](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/)
-- [PostgreSQL](https://www.postgresql.org/)
-- [MongoDB](https://www.mongodb.com/)
+- [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/)
+- One instance of [PostgreSQL](https://www.postgresql.org/)
 
-**Faça um clone desse repositório e acesse o diretório**
+**Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/EliasGcf/NOME_DO_REPO.git
+$ git clone https://github.com/EliasGcf/NOME_DO_REPO.git && cd NOME_DO_REPO
 ```
+
+**Follow the steps below**
 
 ### Backend
 
 ```bash
-# A partir da raiz do projeto, entre na pasta do backend
+# Starting from the project root folder, go to backend folder
 $ cd backend
 
-# Instale as dependências
+# Install the dependencies
 $ yarn
 
-# Tenha um banco de dados PostgreSQL em execução, exemplo:
-$ docker run --name gobarber-postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+# Create the instance of postgreSQL using docker
+$ docker run --name project-postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
-# Faça uma copia do arquivo .env.example para .env e preencha com SUAS variáveis.
-$ cp .env.example .env
+# Make sure the keys in 'ormconfig.json' to connect with your database
+# are set up correctly.
 
-# Execute as migrations
-$ yarn sequelize db:migrate
+# Once the services are running, run the migrations
+$ yarn typeorm migration:run
 
-# Tudo pronto para iniciar o servidor
-$ yarn dev
+# To finish, run the api service
+$ yarn dev:server
+
+# Well done, project is started!
 ```
 
 ### Web
 
-_ps: Antes de executar, lembre-se de iniciar o backend deste projeto_
+_Obs.: Before to continue, be sure to have the API running_
 
 ```bash
-# A partir da raiz do projeto, entre na pasta do frontend web
+# Starting from the project root folder, go to frontend folder
 $ cd frontend
 
-# Instale as dependências
+# Install the dependencies
 $ yarn
 
-# Tudo pronto para iniciar o client
+# Be sure the file 'src/services/api.ts' have the IP to your API
+
+# Start the client
 $ yarn start
 ```
 
 ### Mobile
 
-_ps: Antes de executar, lembre-se de iniciar o backend deste projeto_
+_Obs.: Before to continue, be sure to have the API running_
 
 ```bash
-# A partir da raiz do projeto, entre na pasta do frontend mobile
+# Starting from the project root folder, go to mobile folder
 $ cd mobile
 
-# Instale as dependências
+# Install the dependencies
 $ yarn
 
-# A denpender do seu SO, execute:
-$ yarn react-native run-ios
-# ou
-$ yarn react-native run-android
+# Be sure the file 'src/services/api.ts' have the IP to your API
+
+# If you are going to emulate with android, run this command
+# Be sure to have the emulator open
+$ yarn android
+
+# If you are going to emulate with ios, run this command
+$ yarn ios
 ```
 
-## 🤔 Como contribuir
+## 🤔 How to contribute
 
-- **Faça um fork deste repositório**
+**Make a fork of this repository**
 
 ```bash
-# Fork via GitHub official command line
-# Caso não tenha o GitHub CLI, realize o fork pelo site.
+# Fork using GitHub official command line
+# If you don't have the GitHub CLI, use the web site to do that.
 
 $ gh repo fork EliasGcf/NOME_DO_REPO
 ```
 
+**Follow the steps below**
+
 ```bash
-# Clone o seu fork
-$ git clone url-do-seu-fork && cd NOME_DO_REPO
+# Clone your fork
+$ git clone your-fork-url && cd NOME_DO_REPO
 
-# Crie uma branch com sua feature
-$ git checkout -b minha-feature
+# Create a branch with your feature
+$ git checkout -b my-feature
 
-# Faça o commit das suas alterações
-$ git commit -m 'feat: Minha nova feature'
+# Make the commit with your changes
+$ git commit -m 'feat: My new feature'
 
-# Faça o push para a sua branch
-$ git push origin minha-feature
+# Send the code to your remote branch
+$ git push origin my-feature
 ```
 
-Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
+After your pull request is merged, you can delete your branch
 
-## 📝 Licença
+## 📝 License
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Feito com 💜 by [EliasGcf](https://www.linkedin.com/in/eliasgcf/)
+Made with 💜 by Elias Gabriel 👋 [See my linkedin](https://www.linkedin.com/in/eliasgcf/)
