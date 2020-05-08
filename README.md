@@ -1,8 +1,6 @@
 # My templates to write amazing README'S
 
-<p align="center">
-  <img alt="GitHub" src="https://img.shields.io/github/license/EliasGcf/readme-template">
-</p>
+<img alt="GitHub" src="https://img.shields.io/github/license/EliasGcf/readme-template">
 
 **It’s important to say that all my readme templates are for JavaScript Project**
 
