@@ -49,7 +49,7 @@
 
 ## 🚀 Technologies
 
-Technologies that i used to develop this api
+Technologies that I used to develop this api
 
 - [Node.js](https://nodejs.org/en/)
 - [ReactJS](https://reactjs.org/)
